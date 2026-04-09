@@ -26,3 +26,45 @@ Librerías principales:
 
 ```bash
 pip install pandas numpy scipy scikit-learn networkx openpyxl matplotlib
+````
+
+## Uso
+
+### 1. Ejecutar el análisis
+
+```bash
+python prestige_analysis.py
+```
+
+Este script toma como input `consolidado_ordenado.xlsx` y genera un archivo de resultados consolidado en Excel.
+
+### 2. Generar los gráficos
+
+```bash
+python prestige_plots.py
+```
+
+Este script usa el archivo de resultados generado en el paso anterior y exporta gráficos `.png` en una carpeta de salida.
+
+## Salidas esperadas
+
+* un archivo Excel con resultados procesados
+* tablas de correlación
+* rankings de fórmulas de prestigio
+* métricas de validación
+* gráficos como:
+
+  * heatmaps
+  * scatter plots
+  * feature importance
+  * resúmenes de validación cruzada
+
+## Propósito
+
+El objetivo de este repositorio es dejar trazable y reproducible el pipeline de análisis usado para estudiar cómo distintas dimensiones del prestigio, especialmente la **experiencia**, se relacionan con métricas de influencia como atención visual, tiempo de habla y centralidad estructural.
+
+## Notas
+
+* El repositorio conserva el archivo de entrada original para facilitar la reproducibilidad.
+* Los resultados deben interpretarse como parte de un proceso de análisis académico en desarrollo.
+
